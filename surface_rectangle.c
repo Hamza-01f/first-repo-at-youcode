@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <math.h>
-#define T 3.14
 
 int main(void) {
   int lng;
