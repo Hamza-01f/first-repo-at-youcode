@@ -1,36 +1,34 @@
-#include <stdio>
+#include <stdio.h>
 
-int main(void)
-{
-    char Nom[15];
-    char Pr_Nom[15];
-    int Age;
-    char Sexe;
-    char Email[50];
-    
-    printf("-------------------BIENVENUE---------------------\n");
-    
-    printf("Entrer votre Nom : ");
-    gets(Nom);
-    printf("Entrer votre Prénom : ");
-    gets(Pr_Nom);
-    puts("Entrer votre Email : ");
-    gets(Email);
-    printf("Entrer votre age : ");
-    scanf("%d",&Age);
-    printf("Entrer votre sexe H pour l'homme est F pour la famme : ");
-    scanf(" %c",&Sexe);
-    
-    //afficher les information
-    
-    printf("votre nome est : ");
-    puts(Nom);
-    printf("votre prénom est : ");
-    puts(Pr_Nom);
-    printf("votre Email address est :");
-    puts(Email);
-    printf("votre age est : %d ans \n",Age);
-    printf("votre sexe est : %c\n",Sexe);
+int main() {
+    char nom[50], prenom[50], sexe, email[50];
+    int age;
+
+    // Saisie des informations
+    printf("Entrez votre nom: ");
+    scanf("%s", nom);
+
+    printf("Entrez votre prénom: ");
+    scanf("%s", prenom);
+
+    printf("Entrez votre âge: ");
+    scanf("%d", &age);
+
+    getchar();
+
+    printf("Entrez votre sexe 'H' pour Homme et 'F' pour Femme: ");
+    scanf("%c", &sexe);
+
+    printf("Entrez votre adresse email: ");
+    scanf("%s", email);
+
+    // Affichage des informations
+    printf("\nInformations Personnelles:\n");
+    printf("Nom: %s\n", nom);
+    printf("Prénom: %s\n", prenom);
+    printf("Âge: %d\n", age);
+    printf("Sexe: %c\n", sexe);
+    printf("Email: %s\n", email);
 
     return 0;
 }
