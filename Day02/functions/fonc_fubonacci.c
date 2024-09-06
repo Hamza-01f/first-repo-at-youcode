@@ -1,21 +1,18 @@
 #include <stdio.h>
 
-int fibuncacci(int a ){
-   int b = 0;
-   int c = 1;
-   int result;
-   for(int i = 3 ; i <= a ; i++ ){
-      result = b + c ;
-      b = c ;
-      c = result;
-   }
-   return result;
+int fib(int n ){
+   if(n < 2 )
+   return n;
+   else
+   return fib(n-1) + fib(n-2);
 }
 
 int main(){
     int val1;
     printf("Entrez la valeur : ");
     scanf("%d",&val1);
-
-    printf("le n-ième terme de la suite de Fibonacci de valeur %d est : %d ",val1,fibuncacci(val1));
+    printf("le suit fibunacci de valeur : %d ",val1);
+    for(int i = 0 ; i < val1 ; i++){
+    printf("%d ,",fib(val1));
+    }
 }
