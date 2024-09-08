@@ -9,4 +9,6 @@ int main(){
         if(Nom % i == 0 )
         printf("%d,",i);
     }
+
+    return 0;
 }

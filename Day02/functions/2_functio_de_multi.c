@@ -15,4 +15,6 @@ int main(){
     scanf("%d",&val2);
 
     printf("la multiplication de %d et %d est : %d ",val1,val2,somme(val1,val2));
+
+    return 0;
 }

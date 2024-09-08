@@ -1,4 +1,4 @@
-#include <stdio.h>
+ #include <stdio.h>
 
 int main()
 {
@@ -10,11 +10,12 @@ int main()
           printf("Entrer la valeur de T[%d] =  ",i+1);
           scanf("%d",&T[i]);
       }
-      int s = 0 ;
+      printf("les valeurs impairs sont : \n");
       for(int j = 0 ; j < a ; j++ ){
-          s = s + T[j] ; 
+          if(T[j] % 2 != 0 ){
+            printf("%d ,",T[j]);
+          }
       }
 
-      int Moy = s / a ;
-      printf("la moyenne de tableau est : %d ",Moy);
+      return 0;
 }

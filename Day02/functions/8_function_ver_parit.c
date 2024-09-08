@@ -13,5 +13,5 @@ int main(){
     int ret;
     ret = pair_impair(Nom);
     (ret == 1 ) ? printf("la valeur %d est pair : ",Nom) : printf("la valeur %d est impaire : ",Nom);
-    
+ return 0;   
 }

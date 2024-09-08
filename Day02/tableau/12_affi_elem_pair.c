@@ -16,4 +16,7 @@ int main()
             printf("%d ,",T[j]);
           }
       }
+
+
+      return 0;
 }

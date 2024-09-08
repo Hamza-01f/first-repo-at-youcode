@@ -1,9 +1,10 @@
 #include <stdio.h>
 
 int somme(int a , int b){
-    int c;
-    c = a + b;
-    return c;
+    if(a > b )
+    return a;
+    else
+    return b;
 }
 
 int main(){
@@ -14,5 +15,7 @@ int main(){
     printf("Entrez la deuxieme valeur : ");
     scanf("%d",&val2);
 
-    printf("la somme de %d plus %d est : %d ",val1,val2,somme(val1,val2));
+    printf("le maximum valeur entre %d et %d est : %d ",val1,val2,somme(val1,val2));
+
+    return 0;
 }

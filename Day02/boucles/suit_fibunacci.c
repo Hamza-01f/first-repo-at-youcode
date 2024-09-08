@@ -13,4 +13,6 @@ int main(){
         n2 = valeur;
     }
 
+    return 0;
+
 }

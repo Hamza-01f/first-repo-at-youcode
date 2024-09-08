@@ -17,4 +17,6 @@ int main(){
        }
     }
     printf("la puissance de la base %d avec l'exposant %d est : %d ",bas,ex,pow);
+
+    return 0;
 }
