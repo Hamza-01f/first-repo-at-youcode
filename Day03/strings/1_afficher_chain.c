@@ -7,4 +7,6 @@ int main(){
     gets(Nm);
     printf("afficher la chaine :");
     printf("%s",Nm);
+
+    return 0;
 }

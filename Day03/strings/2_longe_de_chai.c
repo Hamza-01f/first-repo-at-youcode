@@ -16,4 +16,5 @@ int main(){
 
      printf("la longeur de tableau est : %d ",lon);
     
+    return 0;
 }
